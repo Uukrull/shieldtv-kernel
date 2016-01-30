@@ -619,7 +619,8 @@ static int si2168_deselect(struct i2c_adapter *adap, void *mux_priv, u32 chan)
 }
 
 static const struct dvb_frontend_ops si2168_ops = {
-	.delsys = {SYS_DVBT, SYS_DVBT2, SYS_DVBC_ANNEX_A},
+//	.delsys = {SYS_DVBT, SYS_DVBT2, SYS_DVBC_ANNEX_A},
+	.delsys = {SYS_DVBC_ANNEX_A, SYS_DVBT, SYS_DVBT2},
 	.info = {
 		.name = "Silicon Labs Si2168",
 		.symbol_rate_min = 1000000,
