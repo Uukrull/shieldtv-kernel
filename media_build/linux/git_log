@@ -1,0 +1,3 @@
+a73cfe527c10bb023f0e22dd8cf37dd418c093e7 [media] msi2500: Delete an unnecessary check in msi2500_set_usb_adc()
+61f8e1a73296d065abc959e0c0861ffbdfa2d0b3 [media] r820t: Delete an unnecessary variable initialisation in generic_set_freq()
+2050d14c6ea23ea7b50b5cc7d05dbf645705cf70 [media] tuners: Refactoring for m88rs6000t_sleep()
