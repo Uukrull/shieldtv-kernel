@@ -1,0 +1,11 @@
+#include "tegra210-platforms/tegra210-ers-touch-e1937-1000-a00.dtsi"
+
+/ {
+	spi@7000da00 {
+		spi-touch@0 {
+			platform-id = <RM_PLATFORM_L005>;
+			gpio-sensor-select1;
+		};
+	};
+
+};

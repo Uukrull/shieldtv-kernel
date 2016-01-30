@@ -1,0 +1,80 @@
+/dev/tegra-throughput	0666	system	system
+/dev/nvmap      0666    system  system
+/dev/tegra_avpchannel   0660    media   media
+/dev/tegra_audio_avpchannel	0660	media	media
+/dev/mt9m114    0660    media   camera
+/dev/ov7695     0660    media   camera
+/dev/camera*    0660    media   camera
+/dev/video0     0660    media   camera
+/dev/video1     0660    media   camera
+/dev/mipi-cal   0660    media   camera
+/dev/spdif*     0660    system  audio
+/dev/adf*       0660    media   graphics
+/dev/tegra_dc*  0660    system  system
+/dev/ttyACM*    0660    radio   system
+/dev/ttyACM2    0660    media   system
+/dev/ttyACM3    0660    radio   log
+/dev/nvhdcp0    0666    system  system
+/dev/nvhdcp1    0666    system  system
+/dev/nvhost*	0666	root	root
+/dev/tlk_device 0666    system  system
+/dev/ttyHS1	0664	root	system
+/dev/ttyHS2	0660	bluetooth	bluetooth
+/dev/ttyTHS1	0664	root	system
+/dev/ttyTHS2	0660	bluetooth	bluetooth
+# for FM V4L2 Radio
+/dev/radio      0666    system  radio
+/dev/mpu        0640    system  system
+/dev/mpuirq     0640    system  system
+/dev/accelirq   0640    system  system
+/dev/timerirq   0640    system  system
+/dev/touch      0660    system  system
+/dev/ion        0666    system  system
+/dev/timerinfo  0444    system  system
+/dev/cpu_freq_min	0660	system	system
+/dev/cpu_freq_max	0660	system	system
+/dev/gpu_freq_max 0660 system system
+/dev/gpu_freq_min 0660 system system
+/dev/emc_freq_min	0660	system	system
+/dev/min_online_cpus	0660	system	system
+/dev/max_online_cpus	0660	system	system
+/dev/gpu_freq_min	0660	system	system
+/dev/gpu_freq_max	0660	system	system
+/dev/quadd	0660	shell	shell
+/dev/quadd_auth	0660	system	system
+/dev/gps	0664	system	system
+/dev/hidraw*    0660    system  system
+/dev/input/event* 0660  system  input
+/sys/devices/platform/tegra-ehci*	brightness	0660	system	system
+/sys/devices/platform/tegra-ehci*	brightness2	0660	system	system
+/sys/devices/platform/tegra-ehci*	state	0660	system	system
+/sys/devices/platform/tegra-ehci*	state2	0660	system	system
+/sys/bus/usb/devices/2-1:1.1/state	0660	system	system
+/sys/bus/usb/devices/2-1:1.1/brightness	0660	system	system
+/sys/bus/usb/devices/2-1:1.1/brightness2	0660	system	system
+/sys/bus/usb/devices/2-1:1.1/state2	0660	system	system
+/sys/bus/usb/devices/1-1:1.1/state	0660	system	system
+/sys/bus/usb/devices/1-1:1.1/brightness	0660	system	system
+/sys/bus/usb/devices/1-1:1.1/brightness2	0660	system	system
+/sys/bus/usb/devices/1-1:1.1/state2	0660	system	system
+# pmqos
+/dev/constraint_cpu_freq 0660 root system
+/dev/constraint_gpu_freq 0660 root system
+/dev/constraint_online_cpus 0660 root system
+# cpu cores
+/sys/devices/system/cpu/cpu* cpuquiet/active 0664 system system
+/sys/devices/system/cpu/cpu* cpufreq/scaling_governor 0664 system system
+/sys/devices/system/cpu/cpu* cpufreq/scaling_setspeed 0664 system system
+/sys/devices/system/cpu/cpu* cpufreq/scaling_available_frequencies 0444 system system
+/sys/devices/system/cpu/cpu* cpufreq/cpuinfo_cur_freq 0444 system system
+# gk20a nodes
+/sys/devices/platform/host1x gk20a.0/freq_request 0664 system system
+/sys/devices/platform/host1x gk20a.0/user 0664 system system
+/sys/devices/platform/host1x gk20a.0/devfreq/gk20a.0/cur_freq 0444 system system
+/sys/devices/platform/host1x gk20a.0/load 0444 system system
+/sys/devices/platform/host1x gk20a.0/counters_reset 0444 system system
+/sys/devices/platform/host1x gk20a.0/slcg_enable 0664 system system
+/sys/devices/platform/host1x gk20a.0/elcg_enable 0664 system system
+/sys/devices/platform/host1x gk20a.0/elpg_enable 0664 system system
+/sys/devices/platform/host1x gk20a.0/blcg_enable 0664 system system
+/sys/devices/platform/host1x tegradc.0/enable 0664 system system

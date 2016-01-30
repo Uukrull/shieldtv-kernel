@@ -1,0 +1,35 @@
+#Copyright (c) 2014 NVIDIA Corporation.  All Rights Reserved.
+#
+#NVIDIA Corporation and its licensors retain all intellectual property and
+#proprietary rights in and to this software and related documentation.  Any
+#use, reproduction, disclosure or distribution of this software and related
+#documentation without an express license agreement from NVIDIA Corporation
+#is strictly prohibited.
+
+import init.t124.rc
+
+on fs
+    mount_all /fstab.foster
+
+
+on post-fs-data
+
+
+
+# Set Foster as console mode
+    setprop persist.sys.display.resolution 1920x1080
+    setprop persist.tegra.hdmi.resolution Max
+    setprop persist.tegra.idle.minimum_fps 0
+
+
+on device-removed-/sys/block/sda
+    umount /mnt/media_rw/usbdrive
+
+on property:init.svc.hciattach=stopped
+    write /sys/devices/platform/reg-userspace-consumer.1/state disabled
+
+
+
+
+# disable LP0 suspend on foster
+

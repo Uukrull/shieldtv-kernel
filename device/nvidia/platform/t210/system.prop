@@ -1,0 +1,34 @@
+wifi.interface=wlan0
+wifi.Xinterface=xlan0
+ap.interface=wlan0
+
+# boot animation property
+persist.bootanim.preload = 1
+
+#pbc properties
+pbc.log.on = 0
+pbc.hist.size = 5
+pbc.step.period = 700
+pbc.polling.period = 100
+pbc.throttle.depth = 0
+persist.sys.pbc.enabled = 1
+persist.sys.pbc.hyst = 5
+persist.sys.pbc.psys.cap = 10000
+persist.sys.pbc.ibat.cap = 4000
+persist.sys.pbc.pbat.cap = 30000
+persist.sys.pbc.inf.game.mode = 1
+persist.sys.pbc.inf.socthres = 20
+persist.sys.pbc.pbat.slope = 1.5
+persist.sys.pbc.pbat.intercept = -7
+persist.sys.pbc.over.cfboost = true
+persist.sys.pbc.cfboost.floor = 800000
+persist.sys.pbc.gfboost.floor = 300000
+
+#disable Eco mode with charger
+persist.sys.NV_ECO.IF.CHARGING = false
+
+#playback type device, for cec
+ro.hdmi.device_type=4
+
+#used to enable adb over tcpip on port 5555 from Settings app
+persist.system.adb.tcp.enable = 0

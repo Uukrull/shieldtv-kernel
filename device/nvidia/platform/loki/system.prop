@@ -1,0 +1,53 @@
+# opengles.version is 16.16 (maj.min) fixed point
+ro.opengles.version = 196609
+wifi.interface=wlan0
+ap.interface=wlan0
+persist.tegra.nvmmlite = 1
+persist.wlan.ti.calibrated = 0
+ro.sf.lcd_density = 320
+
+#enable Miracast game mode support
+nvwfd.gamemode = 1
+
+# use glcomposer as the default compositor
+persist.tegra.compositor=glcomposer
+
+# disable input resampling
+ro.input.noresample=1
+
+#for pin preference authentication in loki
+nvwfd.auth.pin_preference = 1
+
+#mircast option in power menu
+miracast.powermenu = 1
+
+#pbc properties
+pbc.log.on = 0
+pbc.hist.size = 5
+pbc.step.period = 700
+pbc.polling.period = 100
+pbc.throttle.depth = 0
+persist.sys.pbc.enabled = 1
+persist.sys.pbc.hyst = 5
+persist.sys.pbc.psys.cap = 10000
+persist.sys.pbc.ibat.cap = 4000
+persist.sys.pbc.pbat.cap = 30000
+persist.sys.pbc.inf.game.mode = 1
+persist.sys.pbc.inf.socthres = 20
+persist.sys.pbc.pbat.slope = 0.5
+persist.sys.pbc.pbat.intercept = -6
+
+# usb vendor and product ID definition
+ro.nv.usb.vid = 0955
+ro.nv.usb.pid.mtp = 7102
+ro.nv.usb.pid.mtp.adb = 7100
+ro.nv.usb.pid.rndis = 7103
+ro.nv.usb.pid.rndis.adb = 7103
+ro.nv.usb.pid.ptp = 7102
+ro.nv.usb.pid.ptp.adb = 7100
+
+#increase power off timeout
+persist.nvidia.power_off_delay = 20000
+
+#Set audioflinger resampler quality to DYN_HIGH_QUALITY
+af.resampler.quality = 7

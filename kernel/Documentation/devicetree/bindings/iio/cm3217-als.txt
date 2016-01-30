@@ -1,0 +1,18 @@
+* Capella CM3217 ambient light sensor
+
+Required properties:
+- compatible: must be "capella,cm3217"
+- reg: i2c address of the device. It should be 0x10.
+- vdd-supply: regulator supply for the chip
+
+Optional properties:
+- light_disable: Setting this property to <1> will disable this driver:
+                 The driver will unload after this property is detected.
+
+Example:
+	cm3217@10 {
+		compatible = "capella,cm3217";
+		reg = <0x10>;
+		vdd-supply = <&palmas_smps9>;
+	};
+

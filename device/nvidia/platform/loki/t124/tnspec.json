@@ -1,0 +1,293 @@
+{
+    "copyright" : "Copyright (c) 2014, NVIDIA CORPORATION.  All rights reserved.",
+    "family" : "T124-Loki",
+    "version" : "2.0",
+    "hw" : {
+        "#" : "'.' indicates the corresponding keys do not get copied when based",
+        "." : ["desc"],
+        "#" : "--------- LOKI-T124 ---------",
+        "loki_base_a00" : {
+            "desc" : "Loki Base 2GB, 5inches JDI, A00",
+            "id" : "P2530-A00",
+            "config" : "default",
+            "sn" : "",
+            "proc" : {
+                "id" : "2530",
+                "sku" : "100",
+                "fab" : "0xa0"
+            },
+            "pmu" : {
+                "id" : "2545"
+            },
+            "disp" : {
+                "id" : "2534",
+                "fab" : "2"
+            },
+            "cm" : "0",
+            "lbh" : "1",
+            "factory_mode" : "0",
+            "dbgport" : "3",
+            "batt_make" : "SAMSUNG",
+            "batt_count" : "2"
+        },
+        "loki_base_a01" : {
+            "desc" : "Loki Base 2GB, 5inches JDI, A01",
+            "base" : "loki_base_a00",
+            "proc" : {
+                "fab" : "0xa1"
+            }
+        },
+        "loki_base_a03" : {
+            "desc" : "Loki Base 2GB, 5inches JDI, A03",
+            "base" : "loki_base_a00",
+            "config" : "base_a3",
+            "proc" : {
+                "fab" : "0xa3"
+            }
+        },
+       "loki_base_c00" : {
+            "desc" : "Loki Base 2GB, 5inches JDI, C00",
+            "base" : "loki_base_a00",
+            "config" : "base_c0",
+            "proc" : {
+                "fab" : "0xc0"
+            }
+        },
+       "loki_base_c00_lg" : {
+            "desc" : "Loki Base 2GB, 5inches LG Display, C00",
+            "base" : "loki_base_c00",
+            "disp" : {
+                "fab" : "0"
+            }
+        },
+        "loki_prem_a00" : {
+            "desc" : "Loki Prem 4GB, 5.6inches JDI, A00",
+            "base" : "loki_base_a00",
+            "config" : "prem",
+            "proc" : {
+                "sku" : "0"
+            },
+            "disp" : {
+                "fab" : "1"
+            },
+            "batt_count" : "3"
+        },
+        "loki_prem_a01" : {
+            "desc" : "Loki Prem 4GB, 5.6inches JDI, A01",
+            "base" : "loki_prem_a00",
+            "config" : "prem_a1",
+            "proc" : {
+                "fab" : "0xa1"
+            }
+        },
+        "loki_prem_a03" : {
+            "desc" : "Loki Prem 4GB, 5.6inches JDI, A03",
+            "base" : "loki_prem_a00",
+            "config" : "prem_a3",
+            "proc" : {
+                "fab" : "0xa3"
+            }
+        },
+       "loki_prem_c00" : {
+            "desc" : "Loki Prem 2GB, 5.6inches JDI, C00",
+            "base" : "loki_prem_a00",
+            "config" : "prem_c0",
+            "proc" : {
+                "fab" : "0xc0"
+            }
+        },
+        "loki_prem_lte_a03" : {
+            "desc" : "Loki Prem 4GB, 5.6inches JDI, LTE(modem), A03",
+            "base" : "loki_prem_a03",
+            "config" : "prem_lte_a3"
+        },
+        "loki_prem_lte_c00" : {
+            "desc" : "Loki Prem 4GB, 5.6inches JDI, LTE(modem), C00",
+            "base" : "loki_prem_c00",
+            "config" : "prem_lte_c0"
+        },
+        "foster_a00" : {
+            "desc" : "Foster 4GB, A00",
+            "base" : "loki_prem_a00",
+            "config" : "fost",
+            "proc" : {
+                "sku" : "900",
+                "fab" : "0xa0"
+            },
+            "disp" : {
+                "id" : "0",
+                "sku" : "0",
+                "fab" : "0"
+            },
+            "batt_make" : "",
+            "batt_count" : "0"
+        },
+        "foster_a01" : {
+            "desc" : "Foster 4GB, A01",
+            "base" : "foster_a00",
+            "config" : "fost_a1",
+            "proc" : {
+                "fab" : "0xa1"
+            }
+        },
+        "foster_pro_a01" : {
+            "base" : "foster_a01",
+            "desc" : "SANITY SUPPORT, switch to foster_a01"
+        },
+        "foster_c00" : {
+            "desc" : "Foster 2GB, C00",
+            "base" : "foster_a00",
+            "config" : "fost_c0",
+            "proc" : {
+                "fab" : "0xc0"
+            }
+        },
+        "thor_195" : {
+            "desc" : "Thor 1.95 4GB, 5inches LG",
+            "id" : "E2549-A00",
+            "config" : "default",
+            "sn" : "",
+            "proc" : {
+                "id" : "2549",
+                "sku" : "0",
+                "fab" : "0xb"
+            },
+            "pmu" : {
+                "id" : "2545"
+            },
+            "disp" : {
+                "id" : "2534",
+                "fab" : "0"
+            },
+            "cm" : "0",
+            "lbh" : "1",
+            "factory_mode" : "0",
+            "dbgport" : "3",
+            "batt_make" : "SAMSUNG",
+            "batt_count" : "3"
+        },
+        "loki_nff_b00" : {
+            "desc" : "Loki NFF 4GB, 5inches LG, B00",
+            "id" : "E2548-B00",
+            "config" : "default",
+            "sn" : "",
+            "proc" : {
+                "id" : "2548",
+                "sku" : "0",
+                "fab" : "0xb0"
+            },
+            "pmu" : {
+                "id" : "2545"
+            },
+            "disp" : {
+                "id" : "2534",
+                "fab" : "0"
+            },
+            "cm" : "0",
+            "lbh" : "1",
+            "factory_mode" : "0",
+            "dbgport" : "3",
+            "batt_make" : "SAMSUNG",
+            "batt_count" : "3"
+        },
+        "loki_nff_b00_2gb" : {
+            "desc" : "Loki NFF 2GB, 5inches LG, B00",
+            "base" : "loki_nff_b00",
+            "config" : "b002gb"
+        },
+        "loki_nff_a02" : {
+            "desc" : "Loki NFF 4GB, 5inches LG, A02",
+            "base" : "loki_nff_b00",
+            "config" : "a02",
+            "proc" : {
+                "fab" : "0xa02"
+            }
+        }
+    },
+    "sw" : {
+        "." : [ "compatible", "desc" ],
+        "P2530-A00" : {
+            "bases" : [ "&common" ],
+            "default" : {
+                "bct" : "bct_loki_ffd_sku100.cfg",
+                "dtb" : "tegra124-loki-e2530-a01.dtb"
+            },
+            "base_a3" : {
+                "dtb" : "tegra124-loki-e2530-a03.dtb"
+            },
+            "base_c0" : {
+                "dtb" : "tegra124-loki-p2530-0100-c00-00.dtb"
+            },
+            "prem" : {
+                "dtb" : "tegra124-loki-e2530-a00.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "prem_a1" : {
+                "dtb" : "tegra124-loki-e2530-a01.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "prem_a3" : {
+                "dtb" : "tegra124-loki-e2530-a03.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "prem_c0" : {
+                "dtb" : "tegra124-loki-p2530-0000-c00-00.dtb",
+                "bct" : "bct_loki_ffd_2gb_sku0.cfg"
+            },
+            "prem_lte_a3" : {
+                "odm" : "0x69c008",
+                "dtb" : "tegra124-loki-p2530-0001-a03-00.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "prem_lte_c0" : {
+                "odm" : "0x69c008",
+                "dtb" : "tegra124-loki-p2530-0000-c00-00.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "fost" : {
+                "odm" : "0x29c000",
+                "dtb" : "tegra124-loki-foster.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+           "fost_a1" : {
+                "odm" : "0x6629c000",
+                "dtb" : "tegra124-loki-foster.dtb",
+                "bct" : "bct_loki_ffd_sku0.cfg"
+            },
+            "fost_c0" : {
+                "odm" : "0x6229c000",
+                "dtb" : "tegra124-loki-foster-p2530-0900-c00-00.dtb",
+                "bct" : "bct_loki_ffd_2gb_sku0.cfg"
+            }
+       },
+       "E2549-A00" : {
+           "bases" : [ "&common" ],
+           "default" : {
+               "bct" : "bct_thor1_95.cfg",
+               "dtb" : "tegra124-loki-thor195-e2549-a00.dtb"
+           }
+       },
+       "E2548-B00" : {
+           "bases" : [ "&common" ],
+           "default" : {
+               "bct" : "bct_loki_b00.cfg",
+               "dtb" : "tegra124-loki-e2548-a00.dtb"
+           },
+           "b002gb" : {
+               "bct" : "bct_loki_b00_sku100.cfg"
+           },
+           "a02" : {
+               "bct" : "bct.cfg"
+           }
+       },
+
+       "#references" : "############################################",
+       "&common" : {
+           "default" : {
+               "odm" : "0x69c000",
+               "cfg" : "flash.cfg",
+               "sku" : "0x7"
+           }
+       }
+   }
+}

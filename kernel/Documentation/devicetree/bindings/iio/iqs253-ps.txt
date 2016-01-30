@@ -1,0 +1,26 @@
+* IQS253 proximity sensor
+
+Required properties:
+- compatible: must be "azoteq,iqs2x3"
+- reg: i2c address of the device. It is one of 0x44-0x47.
+- gpio_rdy: gpio to be used for i2c handshake with the sensor.
+
+Optional properties:
+- SAR_proximity_disable: Setting this property to <1> will disable the
+                         SAR proximity.
+- touch_proximity_disable: Setting this property to <1> will disable the
+                           touch sensor.
+  Note: To disable the entire device so that the driver unloads, all sensors
+        must be disabled:
+	SAR_proximity_disable = <1>;
+	touch_proximity_disable = <1>;
+- gpio_sar: gpio to be used for sending proximity event to SAR sensor.
+
+Example:
+
+	iqs263@44 {
+		compatible = "azoteq,iqs263";
+		reg = <0x44>;
+		gpio_rdy = <&gpio TEGRA_GPIO(A, 1) GPIO_ACTIVE_LOW>;
+		gpio_sar = <&gpio TEGRA_GPIO(V, 5) GPIO_ACTIVE_LOW>;
+	};
